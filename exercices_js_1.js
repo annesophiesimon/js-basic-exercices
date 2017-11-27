@@ -6,69 +6,138 @@
 // Ecrire une fonction 'hello' qui affiche dans la console "Hello World!"
 
 function hello() {
-	// write your code HERE
-};
+console.log("Hello World");
+}
+
+hello();
 
 // ----
 // écrire des fonctions suivante:
 // addition(a, b)
+
+function addition (a,b) {
+a+b;
+}
+return addition(5,3);
+
 // soustraction(a, b)
+
+function soustraction (a,b) {
+return a-b;
+}
+soustraction(5,2);
+
 // multiplication(a, b)
+
+function multiplication (a,b) {
+return a*b;
+}
+multiplication(10,2);
 // division(a, b)
+
+function division (a,b) {
+return a/b;
+}
+division(10,2);
 // concatenation(str1, str2)
+
+function concatenation (str1,str2){
+  return str1 + str2;
+}
+
+
+console.log(concatenation("salut"+"anne-so "));
+
+
 // moyenne(a1, a2, a3)
 
-// Chaque fonction devra effectuer l'opération correspondant à son nom, et renvoyer le résultat. 
+function moyenne (a1,a2,a3) {
+var moyenne = (a1+a2+a3)/3;
+return moyenne;
+}
+console.log("voici ta moyenne " + moyenne(10,12,18));
+// Chaque fonction devra effectuer l'opération correspondant à son nom, et renvoyer le résultat.
 // Celui-ci sera stocké dans une variable, qui sera ensuite affichée dans la console
- 
+
 // ----
 // Déclarer deux variables a et b, de valeurs respectives 5 et 12
 // A l'aide d'une variable intermédiaire, inverser les deux valeurs pour que a ait pour valeur 12 et b pour valeur 5
 // Afficher le résultat de a et b dans la console sous la forme d'une phrase: "A vaut : xxx et B vaut yyy"
 var a, b;
-// WRITE YOUR CODE HERE
+a=5;
+b=12;
+var tmp;
+tmp=b;
+b=a;
+a=tmp;
+console.log("A vaut : " + a + " et B vaut : " + b);
 
 // ----
 // Ecrire une fonction 'isDivisibleBy5' qui reçoit un nombre en paramètre, et qui vérifie que ce nombre est divisible par 5.
-// Cette fonction doit renvoyer un booléen
-var isDivisibleBy5 = function(x) {
-	// WRITE YOUR CODE HERE
-};
+function isDivisibleBy5 (a) {
+
+if (a%5==0) {
+  return true;
+
+}
+else
+{
+  return false;
+}
+}
+
+console.log(isDivisibleBy5(10));
+
+
 
 // ----
 // Ecrire une fonction 'isDivisibleByN' qui reçoit deux nombres entiers x et n, et qui vérifie si x est divisible par n.
+
 // Cette fonction doit renvoyer un booléen
 function isDivisibleByN(x, n) {
-	// WRITE YOUR CODE HERE
-}
+  if (x%n==0) {
+    return true;
+
+  }
+  else
+  {
+    return false;
+  }
+  }
+
+  console.log(isDivisibleByN(10,5));
 
 // ----
 // Générer un nombre décimal compris entre 0 et 1, et le stocker dans une variable
 // Changer la valeur de cette variable pour qu'elle vaille le nombre initial arrondi à 2 décimales
 // Afficher dans la console
+
 function genereEtArrondit() {
-  // WRITE YOUR CODE HERE
+var a = Math.random();
+a = a.toFixed(2);
+return a;
 }
 
+console.log(genereEtArrondit());
 
 /**
 * Exercices sur les chaînes de caractères
 **/
 
 // ----
-// Ecrire une fonction qui reçoit une chaîne de caractères, et qui renvoie la position 
+// Ecrire une fonction qui reçoit une chaîne de caractères, et qui renvoie la position
 // de la première occurence de la lettre 'e' dans cette chaîne
 
 // ----
-// Ecrire une fonction qui reçoit une chaîne de caractères, et qui renvoie la position 
+// Ecrire une fonction qui reçoit une chaîne de caractères, et qui renvoie la position
 // de la dernière occurence de la lettre 'e' dans cette chaîne
 
 // ----
-// Ecrire une fonction qui reçoit une chaîne de caractères contenant une prhase entière, 
+// Ecrire une fonction qui reçoit une chaîne de caractères contenant une prhase entière,
 // et qui renvoie un tableau contenant chacun des différents mots dans la phrase
 
 // ----
-// Ecrire une fonction qui reçoit une chaîne de caractère, qui transforme 
+// Ecrire une fonction qui reçoit une chaîne de caractère, qui transforme
 // la première lettre en majuscule, et qui renvoie la nouvelle chaîne
 
 
@@ -99,7 +168,7 @@ function genereEtArrondit() {
 
 // ----
 // Ecrire une fonction qui prend en argument un tableau de nombres et en calcule la somme.
-// Valeurs initiales: 
+// Valeurs initiales:
 var numTab = [45, 99, 357, -33, 1, 8, -78];
 function computeSumOfArray(tab) {
 	// WRITE YOUR CODE HERE
@@ -144,7 +213,7 @@ function computeSumOfArray(tab) {
 // - modifier dynamiquement le prénom de cet objet
 
 // ----
-// Ecrire une fonction qui reçoit un objet, et qui renvoie la longueur de cet objet 
+// Ecrire une fonction qui reçoit un objet, et qui renvoie la longueur de cet objet
 var getObjLength = function(obj) {
 	// WRITE YOUR CODE HERE
 };
