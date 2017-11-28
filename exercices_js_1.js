@@ -127,18 +127,52 @@ console.log(genereEtArrondit());
 // ----
 // Ecrire une fonction qui reçoit une chaîne de caractères, et qui renvoie la position
 // de la première occurence de la lettre 'e' dans cette chaîne
+function caractere() {
+var chaine = "bonjour";
+var e = chaine.charAt(0);
+return e;
+}
+
+console.log(caractere());
 
 // ----
 // Ecrire une fonction qui reçoit une chaîne de caractères, et qui renvoie la position
 // de la dernière occurence de la lettre 'e' dans cette chaîne
+function occurence() {
+var chaine = "hello";
+  var e = chaine.lastIndexOf("l");
+console.log(e);
+}
+
+occurence();
+
+
 
 // ----
 // Ecrire une fonction qui reçoit une chaîne de caractères contenant une prhase entière,
 // et qui renvoie un tableau contenant chacun des différents mots dans la phrase
+function tableau(phrase) {
+
+var tableau = phrase.split(" ");
+return tableau;
+
+}
+
+console.log(tableau("coucou ca va "));
+
 
 // ----
 // Ecrire une fonction qui reçoit une chaîne de caractère, qui transforme
 // la première lettre en majuscule, et qui renvoie la nouvelle chaîne
+
+function maj(phrase) {
+
+var phrase = phrase.substr(0,1).toUpperCase()+phrase.substring(1,phrase.length).toLowerCase();
+return phrase;
+}
+
+console.log(maj("LA PREMIERE LETTRE EN MAJUSCULE LE RESTE EN MINUSCULE "));
+
 
 
 /**
@@ -148,6 +182,7 @@ console.log(genereEtArrondit());
 // ----
 // Ecrire une fonction qui stocke vos noms et prénoms dans deux variables firstName et lastName
 // Afficher dans une popup la concaténation des deux
+
 
 // ----
 // Ecrire une fonction qui respecte les étapes suivantes:
